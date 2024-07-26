@@ -21,8 +21,7 @@ CONFIG_FILE = os.path.join(
     'strava-backup.conf'
 )
 OUTPUT_DIR = os.path.join(
-    os.environ.get('XDG_DATA_HOME', os.path.join(HOME, ".local", "share")),
-    "strava-backup"
+    os.environ.get('XDG_DATA_HOME', os.path.join(HOME, ".local", "share"))
 )
 
 
