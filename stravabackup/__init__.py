@@ -309,7 +309,7 @@ class StravaBackup:
             if not a.manual and not have_data:
                 # Download the original activity from the website
                 data = self.client.get_activity_data(a.id,
-                                                     fmt=DataFormat.ORIGINAL,
+                                                     fmt=DataFormat.GPX,
                                                      json_fmt=DataFormat.GPX)
                 ext = data.filename.rsplit(".", 1)[-1]
 
